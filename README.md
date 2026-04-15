@@ -42,9 +42,25 @@ This tool was built to:
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- HTML
+- CSS
+- JavaScript 
 - html2canvas
 - jsPDF
-- SheetJS (xlsx)
+- SheetJS - EXCEL (xlsx)
+
+## Live Demo
+
+A fully working version of this O&M reporting tool is deployed using GitHub Pages:
+
+ https://anasalsas.github.io/O-M-Report-Generator-HTML-JavaScript-/
+
+You can interact with the form, generate a PDF report, and export data to Excel directly from the browser.
+
+
+## Future Improvements
+
+Planned enhancements for this project include:
+
+- Improved UI/UX design for a more professional O&M report layout
+- Dashboard view with aggregated maintenance KPIs
