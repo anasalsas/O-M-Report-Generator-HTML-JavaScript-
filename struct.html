@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O&M Report</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="report">
+
+  <div class="container">
+
+    <!-- LOGO --> 
+    <!--<div style="text-align:center;"> 
+      <img src="logo.png" alt="Logo" style="width:120px;"> 
+    </div>-->
+    
+    <h1>O&M REPORT</h1>
+
+    <!--<div class="cover-image">
+      <img src="oandm.jpg" alt="O&M Cover" />
+    </div>-->
+
+    <!-- SITE INFO -->
+    <h3>Site Information</h3>
+
+    <input type="text" placeholder="Maintenance ID">
+    <input type="text" placeholder="City">
+    <input type="text" placeholder="Latitude">
+    <input type="text" placeholder="Longitude">
+
+    <br><br>
+
+    <input type="number" placeholder="Panel Orientation (°)">
+    <input type="number" placeholder="Panel Tilt (°)">
+
+    <br><br>
+
+    <label>Installation Type</label><br>
+    <label><input type="radio" name="installationType"> Residential</label>
+    <label><input type="radio" name="installationType"> Commercial</label>
+    <label><input type="radio" name="installationType"> Community Solar</label>
+
+    <br><br>
+
+    <label>Structure Type</label><br>
+    <label><input type="checkbox"> Roof (tile)</label>
+    <label><input type="checkbox"> Roof (flat)</label>
+    <label><input type="checkbox"> Ground mounted</label>
+    <label><input type="checkbox"> Carport</label>
+
+    <hr>
+
+    <!-- MAINTENANCE TYPE -->
+    <h3>Type of Maintenance</h3>
+
+    <label><input type="radio" name="maintenanceType" value="preventive"> Preventive</label>
+    <label><input type="radio" name="maintenanceType" value="corrective"> Corrective</label>
+    <label><input type="radio" name="maintenanceType" value="cleaning"> Cleaning</label>
+
+    <!-- PREVENTIVE -->
+    <div id="preventiveSection">
+      <h3>Preventive Inspection</h3>
+
+      <label><input type="checkbox"> Visual inspection of inverters</label>
+      <label><input type="checkbox"> Visual inspection of panels</label>
+      <label><input type="checkbox"> Check inverter alarms</label>
+
+      <p><b>Alarms:</b></p>
+      <label><input type="checkbox"> DC Arc Fault</label>
+      <label><input type="checkbox"> Overvoltage</label>
+      <label><input type="checkbox"> Grid Loss</label>
+      <label><input type="checkbox"> Overtemperature</label>
+    </div>
+
+    <!-- CORRECTIVE -->
+    <div id="correctiveSection">
+      <h3>Corrective Actions</h3>
+
+      <label><input type="checkbox"> Inverter replacement</label>
+      <label><input type="checkbox"> Data failure</label>
+      <label><input type="checkbox"> WiFi / communication issues</label>
+      <label><input type="checkbox"> Configuration / firmware update</label>
+
+      <br><br>
+      <textarea placeholder="Additional notes..."></textarea>
+    </div>
+
+    <!-- CLEANING -->
+    <div id="cleaningSection">
+      <h3>Cleaning</h3>
+
+      <label><input type="checkbox"> Water only</label>
+      <label><input type="checkbox"> Water + biodegradable soap</label>
+      <label><input type="checkbox"> Robot cleaning system</label>
+
+      <br><br>
+
+      <label>Soiling level (0-10)</label>
+      <input type="number" min="0" max="10">
+
+      <br><br>
+
+      <label>Cause of dirt:</label><br>
+      <label><input type="checkbox"> Near beach</label>
+      <label><input type="checkbox"> Industrial area</label>
+      <label><input type="checkbox"> Construction nearby</label>
+    </div>
+
+  </div>
+</div>
+
+<!-- BUTTONS -->
+<button id="downloadBtn">Download PDF</button>
+<button onclick="exportExcel()">Export Excel</button>
+
+<!-- LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
