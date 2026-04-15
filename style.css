@@ -1,0 +1,115 @@
+/* --- GLOBAL --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* -- CONTAINER -- */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* -- HEADERS -- */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* -- FORM ELEMENTS -- */
+label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* -- Inputs -- */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* -- Radio buttons -- */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* -- Text area -- */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* -- SECTIONS -- */
+section {
+  margin-bottom: 25px;
+}
+
+/* -- COVER -- */
+.cover {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 14px;
+}
+
+/* -- HIDDEN SECTIONS -- */
+#cleaningSection,
+#correctiveSection,
+#inverterSection {
+  display: none;
+}
+
+/* -- BUTTON STYLE -- */
+button {
+  background-color: #2d6cdf;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #1f56c2;
+}
+
+.cover-image {
+  text-align: center;
+}
+
+.cover-image img {
+  width: 300px;
+  height: auto;
+}
