@@ -3,6 +3,9 @@
 A simple web-based tool for generating Operation & Maintenance (O&M) reports for photovoltaic (PV) installations.  
 The application allows users to input site and maintenance data and export it automatically as **PDF** and **Excel** reports.
 
+**Project Context & Presentation**
+This project was developed and structured as a complete end-to-end case, including a supporting presentation deck. The deck was used to frame the business problem, define the solution approach, and communicate the expected operational and data-driven benefits for O&M stakeholders in photovoltaic operations.
+
 ---
 
 ## Overview
